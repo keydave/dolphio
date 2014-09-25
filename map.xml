@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE map [
+<!ELEMENT map (room)>
+<!ELEMENT room (#PCDATA)>
+]>
+<map>
+    <room id="1">
+        <door direction="north" room="2" open="true" />
+    </room>
+    <room id="2">
+        <door direction="south" room="1" open="true" />
+        <door direction="west" room="3" open="true" />
+        <door direction="east" room="4" open="false" />
+    </room>
+    <room id="3">
+        <door direction="east" room="2" open="true" />
+    </room>
+    <room id="4">
+        <door direction="west" room="2" open="true" />
+    </room>
+</map>
